@@ -1,11 +1,16 @@
 {
   "include": [
-    "src/**/*"
+    "packages/**/*"
   ],
   "exclude": [
     "node_modules/*"
   ],
   "compilerOptions": {
+    "paths": {
+      "flix-react-native/*": [
+        "./packages/*"
+      ]
+    },
     "allowJs": true,
     "module": "es6",
     "declaration": true,

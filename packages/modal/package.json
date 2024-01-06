@@ -1,7 +1,7 @@
 {
-  "name": "@flix-react-native/snackbar",
+  "name": "@flix-react-native/modal",
   "version": "0.0.1",
-  "description": "Flix React Native Snackbar - A simple Snackbar with Zero Dependencies, pure Javascript code, Context API without child re-rendering",
+  "description": "Flix React Native Modal - A simple Modal with Zero Dependencies, pure Javascript code, Context API without child re-rendering",
   "main": "dist/index.js",
   "react-native": "./dist/index",
   "module": "dist/index",
@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/flixyudh/flix-react-native/tree/master/packages/snackbar"
+    "url": "https://github.com/flixyudh/flix-react-native/tree/master/packages/modal"
   },
   "keywords": [
     "react",
     "react-native",
-    "snackbar"
+    "mdoal"
   ],
   "publishConfig": {
     "access": "public"

@@ -1,5 +1,5 @@
 {
-  "name": "react-native-flix-snackbar",
+  "name": "flix-react-native",
   "private": true,
   "description": "List of React Native Component created by Flix",
   "workspaces": [
@@ -7,15 +7,16 @@
     "example"
   ],
   "author": "Flix <flixy121@gmail.com> (https://github.com/flixyudh)",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+  "scripts": {
+    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "example": "yarn workspaces foreach -A run build && yarn workspace example",
+    "docs": "npx styleguidist server"
   },
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
   },
   "devDependencies": {
-    "@babel/core": "^7.23.5",
     "@react-native/babel-preset": "^0.74.0",
     "@react-native/eslint-config": "^0.72.2",
     "@types/react": "~17.0.21",
@@ -26,8 +27,39 @@
     "prettier": "^2.0.5",
     "react": "18.2.0",
     "react-native": "0.72.6",
-    "react-native-web": "~0.19.6",
     "typescript": "^5.3.3"
   },
-  "packageManager": "yarn@3.6.1"
+  "packageManager": "yarn@3.6.1",
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@react-native",
+      "prettier"
+    ],
+    "rules": {
+      "react-hooks/exhaustive-deps": "off",
+      "react-native/no-inline-styles": "off",
+      "prettier/prettier": [
+        "error",
+        {
+          "quoteProps": "consistent",
+          "singleQuote": true,
+          "tabWidth": 2,
+          "trailingComma": "es5",
+          "useTabs": false
+        }
+      ]
+    }
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "dist/"
+  ],
+  "prettier": {
+    "quoteProps": "consistent",
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "useTabs": false
+  }
 }

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button, Text, View } from 'react-native';
-import { useSnackbar } from 'react-native-flix-snackbar';
+import { useSnackbar } from '@flix-react-native/snackbar';
 
 const Example = (props) => {
-  const show = useSnackbar();
+  const { show } = useSnackbar();
 
   return (
     <View style={{ flex: 1 }}>
